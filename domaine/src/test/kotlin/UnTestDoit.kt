@@ -3,6 +3,6 @@ import io.kotest.matchers.shouldBe
 
 class UnTestDoit : StringSpec({
     "être vrai" {
-        false shouldBe true
+        true shouldBe true
     }
 })

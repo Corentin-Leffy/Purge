@@ -25,3 +25,19 @@ Pour éviter de ré-écrire la logique du jeu pour chaque application, celle-ci 
 
 Kotlin est un langage de développement pensé pour le développeur.
 Nous en explorerons ses avantages dans les différentes couches.
+
+== Installation
+
+=== Crochets Git
+
+Detekt est intégré au flux de travail de développement en utilisant un crochet de pré-validation Git.
+
+Le script peut être installé en copiant le contenu dans `.git/hooks/pre-commit` :
+```shell
+cp config/detekt/pre-commit .git/hooks/pre-commit
+```
+
+Ce crochet de pré-validation doit être exécutable :
+```shell
+chmod +x .git/hooks/pre-commit
+```
