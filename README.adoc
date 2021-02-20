@@ -1,0 +1,27 @@
+= La Purge
+
+Exemple d'implémentation des principes d'https://web.archive.org/web/20090122225311/http://alistair.cockburn.us/Hexagonal+architecture[*Architecture Hexagonale*^]
+(ou https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html[*Clean Architecture*^]).
+
+Les cas d'utilisation sont au cœur de l'application, découplées des bibliothèques et des détails technologiques.
+
+La Purge est un jeu punitif, où chaque participant a une chance de se faire bannir ou de perdre son droit de s'exprimer dans un salon de discussion, oral ou écrit.
+La sanction peut être temporaire ou bien définitive 😈
+
+== Motivation
+
+=== Apprendre à concevoir des applications modulaires
+
+Apprendre à concevoir des applications modulaires vous aidera à devenir un meilleur ingénieur.
+
+La conception d'applications modulaires est le Saint Graal de l'architecture logicielle, il est difficile de trouver des ingénieurs expérimentés dans la conception d'applications qui permettent d'ajouter de nouvelles fonctionnalités à une vitesse constante.
+
+Le jeu, le cœur de l'application, doit être fonctionnel pour différent type de salon de discussions.
+En effet, le jeu doit être jouable avec Slack, Twitch, Discord, Teams, ...
+
+Pour éviter de ré-écrire la logique du jeu pour chaque application, celle-ci est isolée dans un module à part, et propose des ports auxquels les applications viendront se plugger
+
+=== Explorer les fonctionnalités de Kotlin
+
+Kotlin est un langage de développement pensé pour le développeur.
+Nous en explorerons ses avantages dans les différentes couches.
